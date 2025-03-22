@@ -1,8 +1,10 @@
-@extends('dashboard.dashboard')
+@extends('dashboard')
 
 @section('content')
     <div class="main-panel">
-
+        <div class="mb-3">
+            <a href="{{ route('users.create') }}" class="btn btn-success">Create New User</a>
+        </div>
         <div class=" grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">

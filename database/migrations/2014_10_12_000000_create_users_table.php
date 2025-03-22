@@ -16,6 +16,7 @@ return new class extends Migration
             $table->string('name');
             $table->enum('role', ['user', 'admin', 'super_admin'])->default('user');
             $table->string('email')->unique();
+            $table->softDeletes();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
             $table->rememberToken();
@@ -28,6 +29,8 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::dropIfExists('users');
+        Schema::table('users', function (Blueprint $table) {
+            $table->dropSoftDeletes();
+        });
     }
 };

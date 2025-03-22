@@ -7,12 +7,13 @@
                 <div class="zurf-top-bar-left zurf-item-pdlr">
                     <div class="tourmaster-user-top-bar tourmaster-guest tourmaster-style-1" data-redirect="index.html"
                         data-ajax-url="#">
+                        
                         <div class="zurf-top-bar-left zurf-item-pdlr">
                             @if (Route::has('login'))
                                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
                                     @auth
                                        
-                                            @if (auth()->user()->role === 'admin')
+                                            @if (auth()->user()->role === 'admin' || auth()->user()->role === 'super_admin')
                                                 <a href="{{ route('dashboard') }}"
                                                     class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
                                                     style="padding-right: 20px">
