@@ -2,7 +2,7 @@
 
 @section('content')
     <div class="main-panel">
-        <div class="mb-3">
+        <div class="mb-3" style="margin-top: 40px">
             <a href="{{ route('users.create') }}" class="btn btn-success">Create New User</a>
         </div>
         <div class=" grid-margin stretch-card">

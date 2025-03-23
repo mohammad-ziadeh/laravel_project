@@ -196,15 +196,8 @@
                                                 <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                 <ul></ul>
                                             </div>
-                                            <form action="/zurf/scuba/contact/#wpcf7-f1319-p1964-o1" method="post" class="wpcf7-form init" aria-label="Contact form" novalidate="novalidate" data-status="init">
-                                                <div style="display: none;">
-                                                    <input type="hidden" name="_wpcf7" value="1319" />
-                                                    <input type="hidden" name="_wpcf7_version" value="6.0.1" />
-                                                    <input type="hidden" name="_wpcf7_locale" value="en_US" />
-                                                    <input type="hidden" name="_wpcf7_unit_tag" value="wpcf7-f1319-p1964-o1" />
-                                                    <input type="hidden" name="_wpcf7_container_post" value="1964" />
-                                                    <input type="hidden" name="_wpcf7_posted_data_hash" value="" />
-                                                </div>
+                                            <form action="{{ route('contacts.store') }}" method="POST">
+                                                @csrf
                                                 <div class="gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column">
                                                     <div class="gdlr-core-column-30">
                                                         <p>
@@ -216,9 +209,8 @@
                                                                     aria-required="true"
                                                                     aria-invalid="false"
                                                                     placeholder="Full Name*"
-                                                                    value=""
                                                                     type="text"
-                                                                    name="your-name"
+                                                                    name="name"
                                                                 />
                                                             </span>
                                                         </p>
@@ -233,9 +225,8 @@
                                                                     aria-required="true"
                                                                     aria-invalid="false"
                                                                     placeholder="Email*"
-                                                                    value=""
                                                                     type="email"
-                                                                    name="your-email"
+                                                                    name="email"
                                                                 />
                                                             </span>
                                                         </p>
@@ -251,9 +242,8 @@
                                                                     aria-required="true"
                                                                     aria-invalid="false"
                                                                     placeholder="Subject*"
-                                                                    value=""
                                                                     type="text"
-                                                                    name="your-subject"
+                                                                    name="subject"
                                                                 />
                                                             </span>
                                                         </p>
@@ -270,17 +260,18 @@
                                                                     aria-required="true"
                                                                     aria-invalid="false"
                                                                     placeholder="Message*"
-                                                                    name="your-message"
+                                                                    name="message"
                                                                 ></textarea>
                                                             </span>
                                                         </p>
                                                     </div>
                                                     <div class="gdlr-core-column-60 gdlr-core-center-align">
-                                                        <p><input class="wpcf7-form-control wpcf7-submit has-spinner gdlr-core-full" type="submit" value="Submit Now" /></p>
+                                                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>         
                                                     </div>
                                                 </div>
                                                 <div class="wpcf7-response-output" aria-hidden="true"></div>
                                             </form>
+                                            
                                         </div>
                                     </div>
                                 </div>

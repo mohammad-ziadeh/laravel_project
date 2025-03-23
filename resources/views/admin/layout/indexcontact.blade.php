@@ -3,7 +3,7 @@
 @section('content')
     <div class="main-panel">
 
-        <div class=" grid-margin stretch-card">
+        <div class=" grid-margin stretch-card" style="margin-top: 80px">
             <div class="card">
                 <div class="card-body">
                     <h4 class="card-title">Basic Table</h4>

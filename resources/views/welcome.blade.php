@@ -4,37 +4,7 @@
 
     <div class="zurf-body-outer-wrapper">
         <div class="zurf-body-wrapper clearfix zurf-with-transparent-header zurf-with-frame">
-            <div class="zurf-header-background-transparent">
-                <div class="zurf-top-bar">
-                    <div class="zurf-top-bar-background">
-                    </div>
-                    <div class="zurf-top-bar-container zurf-container">
-                        <div class="zurf-top-bar-container-inner clearfix">
-                            
-                            <div class="zurf-top-bar-right zurf-item-pdlr">
-                                <div class="zurf-top-bar-right-text">
-                                    <i class="fa5s fa5-phone"
-                                        style="font-size: 15px; color: #ffffff; margin-right: 10px;"></i><span
-                                        style="font-weight: 500;"> 1.820.3345.33</span>
-                                    <i class="fa5s fa5-envelope-open"
-                                        style="font-size: 15px; color: #ffffff; margin-left: 30px; margin-right: 10px;"></i>
-                                    <a href="#"><span class="__cf_email__">test@gmail.com</span></a>
-                                </div>
-                                <div class="zurf-top-bar-right-social">
-                                    <a href="#" target="_blank" class="zurf-top-bar-social-icon" title="facebook"><i
-                                            class="fa6b fa6-facebook"></i></a>
-                                    <a href="#" target="_blank" class="zurf-top-bar-social-icon" title="flickr"><i
-                                            class="fa6b fa6-flickr"></i></a>
-                                    <a href="#" target="_blank" class="zurf-top-bar-social-icon" title="twitter"><i
-                                            class="fa6b fa6-x-twitter"></i></a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-
-            </div>
+           
 
             <div class="zurf-page-wrapper" id="zurf-page-wrapper">
                 <div class="gdlr-core-page-builder-body clearfix">

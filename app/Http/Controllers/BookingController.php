@@ -2,19 +2,19 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Contact;
+use App\Models\Booking;
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
 
-class ContactsController extends Controller
+class BookingController extends Controller
 {
     /**
      * Display a listing of the resource.
      */
     public function index()
     {
-        $contacts = Contact::paginate(10); 
-        return view('admin.layout.indexcontact',compact('contacts'));
+        $Bookings = Booking::all();
+        return view('admin.layout.reservations',compact('Bookings'));
     }
 
     /**
@@ -22,7 +22,7 @@ class ContactsController extends Controller
      */
     public function create()
     {
-        return view('admin.layout.users.create');
+        return view('home.ourtrip');
     }
 
     /**
@@ -30,20 +30,21 @@ class ContactsController extends Controller
      */
     public function store(Request $request)
     {
-        Contact::create([
-            'name' => $request->name,
-            'email' => $request->email,
-            'subject' => $request->subject,
-            'message' => $request->message,
+          Booking::create([
+          'name' => $request->name,
+          'email' => $request->email,
+           'date' => $request->date,
+           'time' => $request->time,
+           'message' => $request->message,
+           'numberofpeople' =>$request->numberofpeople,
         ]);
-        return view('home.contactus');
-        
+        return redirect('tripcruds');
     }
 
     /**
      * Display the specified resource.
      */
-    public function show(string $id)
+    public function show(Booking $booking)
     {
         //
     }
@@ -51,7 +52,7 @@ class ContactsController extends Controller
     /**
      * Show the form for editing the specified resource.
      */
-    public function edit(string $id)
+    public function edit(Booking $booking)
     {
         //
     }
@@ -59,7 +60,7 @@ class ContactsController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, string $id)
+    public function update(Request $request, Booking $booking)
     {
         //
     }
@@ -67,9 +68,9 @@ class ContactsController extends Controller
     /**
      * Remove the specified resource from storage.
      */
-    public function destroy( $id)
+    public function destroy($id)
     {
-        Contact::destroy($id);
-        return redirect()->route('contacts.index');
+        Booking::destroy($id);
+        return redirect()->route('booknows.index');
     }
 }

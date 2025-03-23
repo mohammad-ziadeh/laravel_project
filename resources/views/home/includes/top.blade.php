@@ -25,6 +25,11 @@
     <link data-minify="1" rel="stylesheet" id="tourmaster-custom-style-css" href="{{ asset('css/tourmaster-style-custom.css') }}" type="text/css" media="all"/>
     <link data-minify="1" rel="stylesheet" id="zurf-style-core-css" href="{{ asset('css/style-core.css') }}" type="text/css" media="all"/>
     <link data-minify="1" rel="stylesheet" id="zurf-custom-style-css" href="{{ asset('css/zurf-style-custom.css') }}" type="text/css" media="all"/>
-    
+    <!-- Bootstrap 5 CDN -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<!-- Optionally include Bootstrap JavaScript for interactive components -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
 </head>
-<body class="home page-template-default page page-id-15793 theme-zurf gdlr-core-body tourmaster-body woocommerce-no-js zurf-body zurf-body-front zurf-full zurf-with-sticky-navigation zurf-blockquote-style-3 gdlr-core-link-to-lightbox" data-home-url="index.html">
+<body class="home page-template-default page page-id-15793 theme-zurf gdlr-core-body tourmaster-body woocommerce-no-js zurf-body zurf-body-front zurf-full zurf-with-sticky-navigation zurf-blockquote-style-3 gdlr-core-link-to-lightbox" data-home-url="index.html" style="text-decoration: none">

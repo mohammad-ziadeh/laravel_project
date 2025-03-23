@@ -7,42 +7,25 @@
                 <div class="zurf-top-bar-left zurf-item-pdlr">
                     <div class="tourmaster-user-top-bar tourmaster-guest tourmaster-style-1" data-redirect="index.html"
                         data-ajax-url="#">
-                        
                         <div class="zurf-top-bar-left zurf-item-pdlr">
                             @if (Route::has('login'))
-                                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right">
+                                <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right"
+                                    style="display: flex; align-items: center;">
                                     @auth
-                                       
-                                            @if (auth()->user()->role === 'admin' || auth()->user()->role === 'super_admin')
-                                                <a href="{{ route('dashboard') }}"
-                                                    class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                                    style="padding-right: 20px">
-                                                    Admin Dashboard
-                                                </a>
-                                            @endif
-                                       
+                                        <a href="/profile"><i class="fa-solid fa-user" style="font-size: xx-large"></i></a>
 
-
-                                        <div class="flex">
-                                            <form method="POST" action="{{ route('logout') }}" class="inline">
-                                                @csrf
-                                                <button type="submit"
-                                                    class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
-                                                    Logout
-                                                </button>
-                                            </form>
-                                        </div>
+                                        @if (auth()->user()->role === 'admin' || auth()->user()->role === 'super_admin')
+                                            <a href="{{ route('dashboard') }}" class="btn btn-primary"
+                                                style="margin-left: 20px">
+                                                Admin Dashboard
+                                            </a>
+                                        @endif
                                     @else
-                                        <a href="{{ route('login') }}"
-                                            class="font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500"
-                                            style="padding-right: 20px">
+                                        <a href="{{ route('login') }}" class="btn btn-primary">
                                             Log in
                                         </a>
-
-
                                         @if (Route::has('register'))
-                                            <a href="{{ route('register') }}"
-                                                class="ml-4 font-semibold text-gray-600 hover:text-gray-900 dark:text-gray-400 dark:hover:text-white focus:outline focus:outline-2 focus:rounded-sm focus:outline-red-500">
+                                            <a href="{{ route('register') }}" class="btn btn-secondary" style="margin-left: 20px">
                                                 Register
                                             </a>
                                         @endif
@@ -52,23 +35,18 @@
                         </div>
                     </div>
                 </div>
-                <div class="zurf-top-bar-right zurf-item-pdlr">
-                    <div class="zurf-top-bar-right-text">
-                        <i class="fa5s fa5-phone" style="font-size: 15px; color: #ffffff; margin-right: 10px;"></i>
-                        <span style="font-weight: 500;">1.820.3345.33</span>
-                        <i class="fa5s fa5-envelope-open"
-                            style="font-size: 15px; color: #ffffff; margin-left: 30px; margin-right: 10px;"></i>
-                        <a href="#"><span class="__cf_email__">test@gmail.com</span></a>
-                    </div>
-                    <div class="zurf-top-bar-right-social">
-                        <a href="#" target="_blank" class="zurf-top-bar-social-icon" title="facebook"><i
-                                class="fa6b fa6-facebook"></i></a>
-                        <a href="#" target="_blank" class="zurf-top-bar-social-icon" title="flickr"><i
-                                class="fa6b fa6-flickr"></i></a>
-                        <a href="#" target="_blank" class="zurf-top-bar-social-icon" title="twitter"><i
-                                class="fa6b fa6-x-twitter"></i></a>
-                    </div>
-                </div>
+                @if (Route::has('login'))
+                    @auth
+                        <div class="zurf-top-bar-right zurf-item-pdlr">
+                            <form method="POST" action="{{ route('logout') }}" class="inline">
+                                @csrf
+                                <button type="submit" class="btn btn-danger">
+                                    Logout
+                                </button>
+                            </form>
+                        </div>
+                    @endauth
+                @endif
             </div>
         </div>
     </div>
@@ -102,8 +80,8 @@
                         </ul>
                     </div>
                     <div class="zurf-main-menu-right-wrap clearfix">
-                        <a class="zurf-main-menu-right-button zurf-button-1 zurf-style-default" href="ourtrip"
-                            target="_self">Our Trips</a>
+                        <a class="zurf-main-menu-right-button zurf-button-1 zurf-style-default" href="{{ route('tripcruds.index') }}"
+                            style="text-decoration: none" target="_self">Our Trips</a>
                     </div>
                 </div>
             </div>

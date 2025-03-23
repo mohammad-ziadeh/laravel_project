@@ -6,21 +6,21 @@
                     <div id="block-5" class="widget widget_block zurf-widget">
                         <h2 class="wp-block-heading">Travel Tour</h2>
                     </div>
-                    <div id="block-7" class="widget widget_block widget_text zurf-widget">
+                    <div id="block-7" class="widget widget_block widget_text zurf-widget" >
                         <p>
                              Aqaba.jordan <br/>
                             <span class="gdlr-core-space-shortcode" style="margin-top: 7px;"></span> +962772070959 <br/>
                             <span class="gdlr-core-space-shortcode" style="margin-top: 7px;"></span>
                             <a style="color: #09548c;" href="/cdn-cgi/l/email-protection#64070b0a10050710240109050d084a070b09">
-                            <span class="__cf_email__" data-cfemail="1b7874756f7a786f5b6f697a6d7e776f746e696f737e767e35787476">ahmedalshamileh@gmail.com</span>
+                            <span style="text-decoration: none" class="__cf_email__" data-cfemail="1b7874756f7a786f5b6f697a6d7e776f746e696f737e767e35787476">ahmedalshamileh@gmail.com</span>
                             </a>
                             <br/>
                             <span class="gdlr-core-space-shortcode" style="margin-top: 35px;"></span>
-                            <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;" id="gdlr-core-social-network-1">
-                            <a href="#url" target="_blank" class="gdlr-core-social-network-icon" title="facebook" style=" color: #ffffff; border-color: #ffffff; border-width: 1px; margin-right: 12px; width: 50px; height: 50px; line-height: 50px; background-color: transparent; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; ">
+                            <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="text-decoration: none" style="padding-bottom: 0px; display: block;" id="gdlr-core-social-network-1">
+                            <a href="#url" style="text-decoration: none" target="_blank" class="gdlr-core-social-network-icon" title="facebook" style=" color: #ffffff; border-color: #ffffff; border-width: 1px; margin-right: 12px; width: 50px; height: 50px; line-height: 50px; background-color: transparent; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; ">
                             <i class="fa6b fa6-facebook"></i>
                             </a>
-                            <a href="#url" target="_blank" class="gdlr-core-social-network-icon" title="twitter" style=" color: #ffffff; border-color: #ffffff; border-width: 1px; margin-right: 12px; width: 50px; height: 50px; line-height: 50px; background-color: transparent; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; ">
+                            <a href="#url" style="text-decoration: none" target="_blank" class="gdlr-core-social-network-icon" title="twitter" style=" color: #ffffff; border-color: #ffffff; border-width: 1px; margin-right: 12px; width: 50px; height: 50px; line-height: 50px; background-color: transparent; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; ">
                             <i class="fa6b fa6-x-twitter"></i>
                             </a>
                             <a href="#" target="_blank" class="gdlr-core-social-network-icon" title="instagram" style=" color: #ffffff; border-color: #ffffff; border-width: 1px; margin-right: 12px; width: 50px; height: 50px; line-height: 50px; background-color: transparent; border-radius: 25px; -moz-border-radius: 25px; -webkit-border-radius: 25px; ">
@@ -35,11 +35,11 @@
                         <h3 class="zurf-widget-title">About Us</h3>
                         <span class="clear"></span>
                         <div class="menu-about-us-container">
-                            <ul id="menu-about-us" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
-                                <li class="menu-item zurf-normal-menu"><a href="blog-3-columns.html">Travel Blog & Tips</a></li>
-                                <li class="menu-item zurf-normal-menu"><a href="about-us.html">Working With Us</a></li>
-                                <li class="menu-item zurf-normal-menu"><a href="about-us.html">Be Our Partner</a></li>
-                                <li class="menu-item zurf-normal-menu"><a href="about-us.html">Packages</a></li>
+                            <ul id="menu-about-us" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain" >
+                                <li class="menu-item zurf-normal-menu"><a href="blog-3-columns.html" style="text-decoration: none">Travel Blog & Tips</a></li>
+                                <li class="menu-item zurf-normal-menu"><a href="about-us.html" style="text-decoration: none">Working With Us</a></li>
+                                <li class="menu-item zurf-normal-menu"><a href="about-us.html" style="text-decoration: none">Be Our Partner</a></li>
+                                <li class="menu-item zurf-normal-menu"><a href="about-us.html" style="text-decoration: none">Packages</a></li>
                             </ul>
                         </div>
                     </div>
@@ -50,9 +50,9 @@
                         <span class="clear"></span>
                         <div class="menu-support-container">
                             <ul id="menu-support" class="gdlr-core-custom-menu-widget gdlr-core-menu-style-plain">
-                                <li class="menu-item zurf-normal-menu"><a href="about-us.html">Customer Support</a></li>
-                                <li class="menu-item zurf-normal-menu"><a href="about-us.html">Privacy & Policy</a></li>
-                                <li class="menu-item zurf-normal-menu"><a href="contact.html">Contact Channels</a></li>
+                                <li class="menu-item zurf-normal-menu"><a href="about-us.html" style="text-decoration: none">Customer Support</a></li>
+                                <li class="menu-item zurf-normal-menu"><a href="about-us.html" style="text-decoration: none">Privacy & Policy</a></li>
+                                <li class="menu-item zurf-normal-menu"><a href="contact.html" style="text-decoration: none">Contact Channels</a></li>
                             </ul>
                         </div>
                     </div>
