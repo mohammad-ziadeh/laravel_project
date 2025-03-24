@@ -74,7 +74,7 @@
                                 <a href="/">Home</a>
                             </li>
                             <li class="menu-item menu-item-has-children zurf-normal-menu">
-                                <a href="about" class="">About</a>
+                                <a href="{{ route('about.index') }}" class="">About</a>
                             </li>
                             <li class="menu-item"><a href="contact">Contact</a></li>
                             <li class="menu-item menu-item-has-children zurf-normal-menu">

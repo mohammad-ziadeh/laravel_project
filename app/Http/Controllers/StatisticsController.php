@@ -22,7 +22,7 @@ class StatisticsController extends Controller
         $totalBookings = Booking::count();
         $totalContact = Contact::count();
         $totalOurtripcrud = Ourtripcrud::count();
-        $totalEarning = Ourtripcrud::sum('price');
+        $totalEarning = Booking::sum('price');
 
         // Date-based Statistics
         $todayDate = Carbon::now()->toDateString();

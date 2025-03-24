@@ -17,7 +17,8 @@ return new class extends Migration
             $table->string('email');
             $table->integer('numberofpeople');
             $table->date('date');
-            //$table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
+            $table->unsignedBigInteger('user_id')->nullable()->change();
+            $table->foreign('user_id')->references('id')->on('users')->onDelete('cascade');
             $table->time('time');
             $table->enum('state', ['accepted', 'denied', 'pending'])->default('pending');
             $table->decimal('price', 8, 2);

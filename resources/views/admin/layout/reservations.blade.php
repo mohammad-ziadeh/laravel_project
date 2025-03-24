@@ -42,7 +42,6 @@
                                                 <td>{{ $Booking->date }}</td>
                                                 <td>{{ $Booking->price }}</td>
                                                 
-                                                <!-- Make the state field editable with a dropdown -->
                                                 <td>
                                                     <form action="{{ route('booknows.update', $Booking->id) }}" method="POST">
                                                         @csrf
@@ -68,6 +67,9 @@
                                             @endforeach
                                         </tbody>
                                     </table>
+                                </div>
+                                <div class="d-flex justify-content-center align-items-center">
+                                    {{ $Bookings->links('pagination::bootstrap-4') }}
                                 </div>
                             </div>
                         </div>

@@ -32,6 +32,11 @@
                             Contacts Table
                         </a>
                     </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/packages">
+                            Packages Table
+                        </a>
+                    </li>
                 </ul>
             </div>
         </li>

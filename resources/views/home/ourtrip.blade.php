@@ -1,5 +1,7 @@
 @extends('home.layout.userside')
 @section('content')
+@if (Route::has('login'))
+                                    @auth
     <div class="zurf-page-title-wrap zurf-style-custom zurf-center-align">
         <div class="zurf-header-transparent-substitute"></div>
         <div class="zurf-page-title-overlay"></div>
@@ -26,7 +28,9 @@
 
 
 
-
+                                    
+                                        
+                                    
                                     @if (auth()->user()->role === 'admin' || auth()->user()->role === 'super_admin')
                                         <form action="{{ route('tripcruds.store') }}" method="POST"
                                             enctype="multipart/form-data" class="trip-form" style="margin-bottom: 150px;">
@@ -54,7 +58,7 @@
 
                                                 <div class="form-group">
                                                     <label for="availability" class="label-field">Availability</label>
-                                                    <input type="text" class="form-control input-field"
+                                                    <input type="text" class="form-control input-field" placeholder="from __ to __"
                                                         name="availability" id="availability" required>
                                                 </div>
                                             </div>
@@ -89,6 +93,7 @@
                                             <button type="submit" class="btn btn-primary submit-btn">Submit</button>
                                         </form>
                                     @endif
+                                  
 
 
 
@@ -114,7 +119,7 @@
 
                                                         <div class="tourmaster-tour-content-wrap gdlr-core-skin-e-background gdlr-core-js"
                                                             data-sync-height="tour-item-40">
-
+                                                            
                                                             @if (auth()->user()->role === 'admin' || auth()->user()->role === 'super_admin')
                                                                 <div class="tourmaster-icons"
                                                                     style="position: absolute; top: 10px; right: 10px; z-index: 10;">
@@ -139,6 +144,7 @@
                                                                     </form>
                                                                 </div>
                                                             @endif
+                                                            
 
                                                             <div class="tourmaster-thumbnail-ribbon gdlr-core-outer-frame-element"
                                                                 style="color: #ffffff; background-color: #48bf84;">
@@ -251,7 +257,7 @@
                                                         style="width: 100%; padding: 10px; margin-bottom: 10px;"
                                                         placeholder="price">
                                                   
-                                                   
+                                                   <input type="hidden" name='state' value="pending" >
                                                     <button type="submit" class="tourmaster-button"
                                                         style="padding: 10px; background-color: #48bf84; color: white; border-radius: 5px;">
                                                         Submit Booking
@@ -269,6 +275,12 @@
                 </div>
             </div>
         </div>
+        @else
+        <script>window.location.href = "{{ route('login') }}";</script>
+        
+        @endauth
+        
+        @endif
     @endsection
     <style>
         .trip-form {

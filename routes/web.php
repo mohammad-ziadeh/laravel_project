@@ -1,14 +1,16 @@
 <?php
 
-use App\Http\Controllers\StatisticsController;
+use App\Http\Controllers\BookHistoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\PackageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\OurtripsController;
+use App\Http\Controllers\StatisticsController;
+use App\Http\Controllers\HomePackageController;
 use App\Http\Controllers\OurtripcrudsController;
-
 
 // public
 Route::view('/', 'welcome');
@@ -36,6 +38,8 @@ Route::middleware(['auth','role:admin', 'verified'])->group(function () {
     Route::view('/charts', 'admin.layout.charts')->name('charts');
     Route::view('/contacts', 'admin.layout.indexcontact')->name('contacts');
     Route::view('/users', 'admin.layout.users.index')->name('users');
+    Route::view('/packages', 'admin.layout.packages')->name('package');
+
 });
 
 // Super Admin 
@@ -44,6 +48,7 @@ Route::middleware(['auth', 'role:super_admin', 'verified'])->group(function () {
     Route::view('/charts', 'admin.layout.charts')->name('charts');
     Route::view('/contacts', 'admin.layout.indexcontact')->name('contacts');
     Route::view('/users', 'admin.layout.users.index')->name('users');
+    Route::view('/packages', 'admin.layout.packages')->name('package');
 });
 
 
@@ -54,5 +59,8 @@ Route::resource('contacts', ContactsController::class);
 Route::resource('users', UserController::class);
 Route::resource('ourtrips', OurtripsController::class);
 Route::resource('tripcruds', OurtripcrudsController::class);
+Route::resource('packages', PackageController::class, );
+Route::resource('about', HomePackageController::class, );
 Route::resource('booknows', BookingController::class);
+Route::resource('bookingHistory', BookHistoryController::class);
 Route::resource('statistics', StatisticsController::class);

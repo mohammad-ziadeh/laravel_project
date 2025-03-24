@@ -13,7 +13,7 @@ class BookingController extends Controller
      */
     public function index()
     {
-        $Bookings = Booking::all();
+        $Bookings = Booking::paginate(10);
         return view('admin.layout.reservations', compact('Bookings'));
     }
 
@@ -35,10 +35,12 @@ class BookingController extends Controller
 
 
         Booking::create([
+            'user_id' => auth()->id(),
             'name' => $request->name,
             'email' => $request->email,
             'date' => $request->date,
             'time' => $request->time,
+            'state' => $request->state,
             'price' => $totalPrice,
             'message' => $request->message,
             'numberofpeople' => $request->numberofpeople,

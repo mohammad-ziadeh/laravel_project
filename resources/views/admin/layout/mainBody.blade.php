@@ -75,10 +75,8 @@
                                             class="col-md-12 col-xl-3 d-flex flex-column justify-content-start">
                                             <div class="ml-xl-4 mt-3">
                                                 <p class="card-title">Detailed Reports</p>
-                                                <h1 class="text-primary">{{$totalEarning}}</h1>
-                                                <p class="mb-2 mb-xl-0">The total number of sessions within the
-                                                    date range. It is the period time a user is actively engaged
-                                                    with your website, page or app, etc</p>
+                                                <h1 class="text-primary">{{$totalEarning}}$</h1>
+                                                <p class="mb-2 mb-xl-0">The total earnings from reservations</p>
                                             </div>
                                         </div>
                                         <div class="col-md-12 col-xl-9">

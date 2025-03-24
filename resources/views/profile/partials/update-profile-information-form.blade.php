@@ -72,4 +72,9 @@
             </form>
         </div>
     </div>
+    <div class="mt-5 text-center">
+        <a href="{{ route('bookingHistory.index') }}" class="btn btn-secondary" style="color: white">
+            {{ __('View Booking History') }}
+        </a>
+    </div>
 </section>
