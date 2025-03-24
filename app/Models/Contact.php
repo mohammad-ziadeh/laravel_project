@@ -18,4 +18,8 @@ class Contact extends Model
         'subject',
         'message',
     ];
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
 }

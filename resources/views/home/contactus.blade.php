@@ -196,6 +196,88 @@
                                                 <p role="status" aria-live="polite" aria-atomic="true"></p>
                                                 <ul></ul>
                                             </div>
+                                            @auth
+                                            @if (auth()->user()->role === 'admin' || auth()->user()->role === 'super_admin'|| auth()->user()->role === 'user')
+                                            <form action="{{ route('contacts.store') }}" method="POST">
+                                                @csrf
+                                                <div class="gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column">
+                                                    <div class="gdlr-core-column-30">
+                                                        <p>
+                                                            <span class="wpcf7-form-control-wrap" data-name="your-name">
+                                                                <input
+                                                                    size="40"
+                                                                    maxlength="400"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                    aria-required="true"
+                                                                    aria-invalid="false"
+                                                                    placeholder="Full Name*"
+                                                                    type="text"
+                                                                    name="name"
+                                                                    value="{{ Auth::user()->name }}"
+                                                                />
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="gdlr-core-column-30">
+                                                        <p>
+                                                            <span class="wpcf7-form-control-wrap" data-name="your-email">
+                                                                <input
+                                                                    size="40"
+                                                                    maxlength="400"
+                                                                    class="wpcf7-form-control wpcf7-email wpcf7-validates-as-required wpcf7-text wpcf7-validates-as-email"
+                                                                    aria-required="true"
+                                                                    aria-invalid="false"
+                                                                    placeholder="Email*"
+                                                                    type="email"
+                                                                    name="email"
+                                                                    value="{{ Auth::user()->email }}"
+                                                                />
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                    <div class="gdlr-core-column-60">
+                                                        <p>
+                                                            <span class="wpcf7-form-control-wrap" data-name="your-subject">
+                                                                <input
+                                                                    size="40"
+                                                                    maxlength="400"
+                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                    aria-required="true"
+                                                                    aria-invalid="false"
+                                                                    placeholder="Subject*"
+                                                                    type="text"
+                                                                    name="subject"
+                                                                />
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="clear"></div>
+                                                    <div class="gdlr-core-column-60">
+                                                        <p>
+                                                            <span class="wpcf7-form-control-wrap" data-name="your-message">
+                                                                <textarea
+                                                                    cols="40"
+                                                                    rows="10"
+                                                                    maxlength="2000"
+                                                                    class="wpcf7-form-control wpcf7-textarea wpcf7-validates-as-required"
+                                                                    aria-required="true"
+                                                                    aria-invalid="false"
+                                                                    placeholder="Message*"
+                                                                    name="message"
+                                                                ></textarea>
+                                                            </span>
+                                                        </p>
+                                                    </div>
+                                                    <div class="gdlr-core-column-60 gdlr-core-center-align">
+                                                            <button class="btn btn-primary w-100 py-3" type="submit">Send Message</button>         
+                                                    </div>
+                                                </div>
+                                                <div class="wpcf7-response-output" aria-hidden="true"></div>
+                                            </form>
+                                            @endauth
+                                            @else
+                                           
                                             <form action="{{ route('contacts.store') }}" method="POST">
                                                 @csrf
                                                 <div class="gdlr-core-input-wrap gdlr-core-large gdlr-core-full-width gdlr-core-with-column">
@@ -271,7 +353,7 @@
                                                 </div>
                                                 <div class="wpcf7-response-output" aria-hidden="true"></div>
                                             </form>
-                                            
+                                            @endif
                                         </div>
                                     </div>
                                 </div>

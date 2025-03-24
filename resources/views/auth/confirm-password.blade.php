@@ -1,27 +1,137 @@
-<x-guest-layout>
-    <div class="mb-4 text-sm text-gray-600 dark:text-gray-400">
-        {{ __('This is a secure area of the application. Please confirm your password before continuing.') }}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirm Password</title>
+    <style>
+        body {
+            background-image: url('images/diver-sea-surrounded-by-wild-nature.jpg');
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: cover;
+            align-items: center;
+            height: 150vh;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 450px;
+            padding: 30px;
+            background-color: white;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+        }
+
+        h2 {
+            margin-bottom: 20px;
+            color: #333;
+        }
+
+        label {
+            display: block;
+            text-align: left;
+            margin-bottom: 8px;
+            color: #555;
+            font-weight: bold;
+        }
+
+        input,
+        button {
+            width: 100%;
+            padding: 12px;
+            margin: 10px 0;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            font-size: 16px;
+            box-sizing: border-box;
+        }
+
+        input:focus,
+        button:focus {
+            border-color: #4A90E2;
+            outline: none;
+        }
+
+        button {
+            background-color: #4A90E2;
+            color: white;
+            cursor: pointer;
+            border: none;
+            font-weight: bold;
+        }
+
+        button:hover {
+            background-color: #357ABD;
+        }
+
+        .error {
+            color: #e74c3c;
+            font-size: 14px;
+            margin-top: 5px;
+            text-align: left;
+        }
+
+        a {
+            color: #4A90E2;
+            text-decoration: none;
+            margin-top: 20px;
+            display: inline-block;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: 20px;
+            font-size: 14px;
+            color: #777;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Confirm Your Password</h2>
+        <div class="mb-4 text-sm text-gray-600">
+            This is a secure area of the application. Please confirm your password before continuing.
+        </div>
+
+        <!-- Session Status -->
+        <div class="mb-4">
+            <!-- Add any session status here if necessary -->
+        </div>
+
+        <form method="POST" action="{{ route('password.confirm') }}">
+            <!-- CSRF token -->
+            <input type="hidden" name="_token" value="{{ csrf_token() }}">
+
+            <!-- Password -->
+            <div>
+                <label for="password">Password</label>
+                <input id="password" type="password" name="password" required autocomplete="current-password">
+                <!-- Error message for password -->
+                <p class="error">{{ $errors->first('password') }}</p>
+            </div>
+
+            <div class="flex justify-end mt-4">
+                <button type="submit">
+                    Confirm
+                </button>
+            </div>
+        </form>
+
+        <div class="footer">
+            <p>Remembered your password? <a href="{{ route('login') }}">Login here</a></p>
+        </div>
     </div>
 
-    <form method="POST" action="{{ route('password.confirm') }}">
-        @csrf
-
-        <!-- Password -->
-        <div>
-            <x-input-label for="password" :value="__('Password')" />
-
-            <x-text-input id="password" class="block mt-1 w-full"
-                            type="password"
-                            name="password"
-                            required autocomplete="current-password" />
-
-            <x-input-error :messages="$errors->get('password')" class="mt-2" />
-        </div>
-
-        <div class="flex justify-end mt-4">
-            <x-primary-button>
-                {{ __('Confirm') }}
-            </x-primary-button>
-        </div>
-    </form>
-</x-guest-layout>
+</body>
+</html>

@@ -17,8 +17,8 @@ return new class extends Migration
             $table->string('duration',100)->default('Any');
             $table->string('date')->default('Any');
             $table->string('month')->default('Any');
-            $table->decimal('min_price', 10, 2)->nullable()->default(0.00);
-            $table->decimal('max_price', 10, 2)->nullable()->default(0.00);
+            $table->decimal('min_price', 10, 2)->nullable()->default(0.0);
+            $table->decimal('max_price', 10, 2)->nullable()->default(0.0);
             $table->integer('rating')->nullable();
             $table->softDeletes();
             $table->timestamps();

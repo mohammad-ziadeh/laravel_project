@@ -11,5 +11,14 @@ class Booking extends Model
     use HasFactory;
     use SoftDeletes;
 
-    protected $fillable =['name','email','date','time','message','numberofpeople'];
+    protected $fillable =['name','email','date','time','message','numberofpeople','price','state'];
+
+
+    public function user(){
+        return $this->belongsTo(User::class);
+    }
+
+    public function ourtipcrud(){
+        return $this->belongsToMany(Ourtripcrud::class, 'ourtripcrud_booking', 'bookings_id','ourtripcruds_id');
+    }
 }

@@ -6,9 +6,9 @@
     body {
         background-image: url("{{ asset('images/underwater-portrait-scuba-diver-exploring-sea-world.jpg') }}");
         background-size: cover;
+        background-color: rgb(37, 150, 190);
         background-repeat: no-repeat;
         background-position: center;
-        height: 100vh;
         width: 100%;
         align-items: center;
         justify-content: center;

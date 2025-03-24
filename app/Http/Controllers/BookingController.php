@@ -14,7 +14,7 @@ class BookingController extends Controller
     public function index()
     {
         $Bookings = Booking::all();
-        return view('admin.layout.reservations',compact('Bookings'));
+        return view('admin.layout.reservations', compact('Bookings'));
     }
 
     /**
@@ -30,13 +30,18 @@ class BookingController extends Controller
      */
     public function store(Request $request)
     {
-          Booking::create([
-          'name' => $request->name,
-          'email' => $request->email,
-           'date' => $request->date,
-           'time' => $request->time,
-           'message' => $request->message,
-           'numberofpeople' =>$request->numberofpeople,
+        
+        $totalPrice = $request->price * $request->numberofpeople;
+
+
+        Booking::create([
+            'name' => $request->name,
+            'email' => $request->email,
+            'date' => $request->date,
+            'time' => $request->time,
+            'price' => $totalPrice,
+            'message' => $request->message,
+            'numberofpeople' => $request->numberofpeople,
         ]);
         return redirect('tripcruds');
     }
@@ -60,9 +65,13 @@ class BookingController extends Controller
     /**
      * Update the specified resource in storage.
      */
-    public function update(Request $request, Booking $booking)
+    public function update(Request $request, $id)
     {
-        //
+        $booking = Booking::find($id);
+        $booking->state = $request->state;
+        $booking->save();
+    
+        return redirect()->route('booknows.index');
     }
 
     /**

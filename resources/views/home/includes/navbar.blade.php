@@ -12,11 +12,14 @@
                                 <div class="sm:fixed sm:top-0 sm:right-0 p-6 text-right"
                                     style="display: flex; align-items: center;">
                                     @auth
-                                        <a href="/profile"><i class="fa-solid fa-user" style="font-size: xx-large"></i></a>
+                                        <a href="/profile"><i class="fa-solid fa-user" style="font-size: x-large"></i></a>
 
                                         @if (auth()->user()->role === 'admin' || auth()->user()->role === 'super_admin')
-                                            <a href="{{ route('dashboard') }}" class="btn btn-primary"
+                                            {{-- <a href="{{ route('dashboard') }}" class="btn btn-primary"
                                                 style="margin-left: 20px">
+                                                Admin Dashboard
+                                            </a> --}}
+                                            <a href="{{ route('statistics.index') }}" class="btn btn-primary">
                                                 Admin Dashboard
                                             </a>
                                         @endif
@@ -57,10 +60,10 @@
         <div class="zurf-header-background"></div>
         <div class="zurf-header-container zurf-container">
             <div class="zurf-header-container-inner clearfix">
-                <div class="zurf-logo zurf-item-pdlr">
-                    <div class="zurf-logo-inner">
-                        <a href="homepage"><img src="images/logox1.png" alt="" width="99" height="15"
-                                title="logox1" /></a>
+                <div class="zurf-logo zurf-item-pdlr" >
+                    <div class="zurf-logo-inner" >
+                        <a href="homepage"><img src="images/logo.png" alt="" style="width: 100px ; height: 100px;"
+                                title="logo" /></a>
                     </div>
                 </div>
                 <div class="zurf-navigation zurf-item-pdlr clearfix zurf-navigation-submenu-indicator">
@@ -79,10 +82,12 @@
                             </li>
                         </ul>
                     </div>
+                    @auth
                     <div class="zurf-main-menu-right-wrap clearfix">
                         <a class="zurf-main-menu-right-button zurf-button-1 zurf-style-default" href="{{ route('tripcruds.index') }}"
                             style="text-decoration: none" target="_self">Our Trips</a>
                     </div>
+                    @endauth
                 </div>
             </div>
         </div>

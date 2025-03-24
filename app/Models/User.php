@@ -52,7 +52,7 @@ class User extends Authenticatable implements MustVerifyEmail
     }
     public function isAdmin()
     {
-        return in_array($this->role, ['admin', 'super_admin']);
+        return $this->role === 'admin';
     }
 
     public function isSuperAdmin()
@@ -62,6 +62,16 @@ class User extends Authenticatable implements MustVerifyEmail
 
 
     use SoftDeletes;
-
     protected $dates = ['deleted_at'];
+
+
+
+    public function booking(){
+        return $this->hasMany(Booking::class);
+
+    }
+    public function contact(){
+        return $this->hasMany(Contact::class);
+
+    }
 }

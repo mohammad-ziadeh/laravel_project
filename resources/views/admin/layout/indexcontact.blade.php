@@ -2,14 +2,13 @@
 
 @section('content')
     <div class="main-panel">
-
+        
         <div class=" grid-margin stretch-card" style="margin-top: 80px">
+           
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Basic Table</h4>
-                    <p class="card-description">
-                        Add class <code>.table</code>
-                    </p>
+                    <h4 class="card-title">Contacts Table</h4>
+                    
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
@@ -35,8 +34,7 @@
                                                 style="display:inline;">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="submit" class="btn btn-danger"
-                                                    onclick="return confirm('Are you sure you want to delete this record?');">Delete</button>
+                                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{ $contact->id }})">Delete</button>
                                             </form>
                                         </td>
                                     </tr>
@@ -52,4 +50,8 @@
         </div>
 
     </div>
+
+
+
+    
 @endsection

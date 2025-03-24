@@ -17,7 +17,10 @@ return new class extends Migration
             $table->string('email');
             $table->integer('numberofpeople');
             $table->date('date');
+            //$table->foreignId('user_id')->constrained('users')->cascadeOnDelete();
             $table->time('time');
+            $table->enum('state', ['accepted', 'denied', 'pending'])->default('pending');
+            $table->decimal('price', 8, 2);
             $table->text('message')->nullable();
             $table->softDeletes();
             $table->timestamps();

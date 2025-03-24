@@ -14,39 +14,12 @@
 <script type="text/javascript" id="jquery-ui-datepicker-js-after">
 <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="stylesheet">
-    /* <![CDATA[ */
-    jQuery(function (jQuery) {
-        jQuery.datepicker.setDefaults({
-            closeText: "Close",
-            currentText: "Today",
-            monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-            monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-            nextText: "Next",
-            prevText: "Previous",
-            dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-            dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-            dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
-            dateFormat: "MM d, yy",
-            firstDay: 1,
-            isRTL: false,
-        });
-    });
-    /* ]]> */
+   
+  
 </script>
 <script type="text/javascript" src="js/effect.min.js" id="jquery-effects-core-js" data-rocket-defer="" defer=""></script>
 <script type="text/javascript" id="tourmaster-script-js-extra">
-    /* <![CDATA[ */
-    var TMi18n = {
-        closeText: "Done",
-        currentText: "Today",
-        monthNames: ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"],
-        monthNamesShort: ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"],
-        dayNames: ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
-        dayNamesShort: ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"],
-        dayNamesMin: ["S", "M", "T", "W", "T", "F", "S"],
-        firstDay: "1",
-    };
-    /* ]]> */
+   
 </script>
 <script data-minify="1" type="text/javascript" src="js/tourmaster.js" id="tourmaster-script-js" data-rocket-defer="" defer=""></script>
 <script type="text/javascript" src="js/sourcebuster.min.js" id="sourcebuster-js-js" data-rocket-defer="" defer=""></script>
