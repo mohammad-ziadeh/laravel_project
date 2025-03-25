@@ -55,7 +55,6 @@ class OurtripcrudsController extends Controller
             'availability' => $request->availability,
             'location' => $request->location,
             'description' => $request->description,
-            'reviews_count' => $request->reviews_count,
             'price' => $request->price,
         ]);
 
@@ -90,7 +89,6 @@ class OurtripcrudsController extends Controller
             'availability' => 'required|string',
             'location' => 'required|string',
             'description' => 'required|string',
-            'reviews_count' => 'required|integer',
             'price' => 'required|numeric',
             'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
@@ -112,7 +110,6 @@ class OurtripcrudsController extends Controller
             'availability' => $validatedData['availability'],
             'location' => $validatedData['location'],
             'description' => $validatedData['description'],
-            'reviews_count' => $validatedData['reviews_count'],
             'price' => $validatedData['price'],
         ]);
 

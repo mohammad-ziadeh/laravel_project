@@ -4,7 +4,7 @@
     <div class="zurf-body-wrapper clearfix zurf-with-transparent-header zurf-with-frame">
 
      
-        <div class="zurf-page-title-wrap zurf-style-custom zurf-center-align">
+        <div class="zurf-page-title-wrap zurf-style-custom zurf-center-align" style="background-image: url(images/delfi-de-la-rua-Sj5efgWguDs-unsplash-1550x700.jpg)">
             <div class="zurf-header-transparent-substitute"></div>
             <div class="zurf-page-title-overlay"></div>
             <div class="zurf-page-title-container zurf-container">
@@ -70,7 +70,7 @@
                                         <div class="gdlr-core-hover-opacity"></div>
                                     </div>
                                     <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Kevin Cox</a></h3>
+                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Ahmed Al-shamileh</a></h3>
                                         <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
                                         <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
                                         <div class="gdlr-core-personnel-list-content">
@@ -95,11 +95,11 @@
                                         <div class="gdlr-core-hover-opacity"></div>
                                     </div>
                                     <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Lisa Ortiz</a></h3>
+                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Saba Al-hrishat</a></h3>
                                         <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
                                         <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
                                         <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
+                                            <p>Deep beneath the surface, where the sunlight fades, lies a world unlike any other. The sea creatures here dance in harmony, and the coral reefs shine like vibrant cities beneath the waves.</p>
                                         </div>
                                         <div class="gdlr-core-personnel-list-social">
                                             <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
@@ -120,11 +120,11 @@
                                         <div class="gdlr-core-hover-opacity"></div>
                                     </div>
                                     <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Richard Murphy</a></h3>
+                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Mohammad Ziadeh</a></h3>
                                         <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
                                         <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
                                         <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
+                                            <p>Across the boundless blue, where the horizon seems endless, there is an island of tranquility. The sea kisses its shores, and the wind sings songs of distant lands.</p>
                                         </div>
                                         <div class="gdlr-core-personnel-list-social">
                                             <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
@@ -151,11 +151,11 @@
                                         <div class="gdlr-core-hover-opacity"></div>
                                     </div>
                                     <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Theodore Moore</a></h3>
+                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Hamed Krishan</a></h3>
                                         <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
                                         <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
                                         <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
+                                            <p>In the heart of the ocean, where the tides ebb and flow with ancient rhythms, there lies a hidden realm known only to the creatures of the deep. Here, time moves at its own pace, untouched by human hands.</p>
                                         </div>
                                         <div class="gdlr-core-personnel-list-social">
                                             <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
@@ -182,11 +182,11 @@
                                         <div class="gdlr-core-hover-opacity"></div>
                                     </div>
                                     <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Alexis Nelson</a></h3>
+                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Rahaf Aqrabawi</a></h3>
                                         <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
                                         <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
                                         <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
+                                            <p>Out on the open sea, where the water stretches as far as the eye can see, the waves rise and fall like the breath of the earth. This vast expanse is both serene and wild, a place of mystery and adventure.</p>
                                         </div>
                                         <div class="gdlr-core-personnel-list-social">
                                             <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
@@ -202,16 +202,16 @@
                                 <div class="gdlr-core-personnel-list clearfix">
                                     <div class="gdlr-core-personnel-list-image gdlr-core-media-image gdlr-core-hover-element gdlr-core-zoom-on-hover">
                                         <a href="index.html">
-                                            <img src="images/personnel-3-1-550x500.jpg" alt="" width="550" height="500" title="personnel-3" />
+                                            <img src="images/portrait01-768x768.jpg" alt="" width="550" height="500" title="personnel-3" />
                                         </a>
                                         <div class="gdlr-core-hover-opacity"></div>
                                     </div>
                                     <div class="gdlr-core-personnel-list-content-wrap">
-                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Gabriel Thompson</a></h3>
+                                        <h3 class="gdlr-core-personnel-list-title" style="font-weight: 800;"><a href="index.html">Jenan Aldweab</a></h3>
                                         <div class="gdlr-core-personnel-list-position gdlr-core-info-font gdlr-core-skin-caption" style="font-style: normal;">Instructor</div>
                                         <div class="gdlr-core-personnel-list-divider gdlr-core-skin-divider"></div>
                                         <div class="gdlr-core-personnel-list-content">
-                                            <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarks.</p>
+                                            <p>Beyond the cliffs, where the sea crashes against the rocks with fierce determination, there lies a land forgotten by time. The salt in the air carries tales of sailors lost to the vast.</p>
                                         </div>
                                         <div class="gdlr-core-personnel-list-social">
                                             <span class="gdlr-core-social-network-item gdlr-core-item-pdb gdlr-core-none-align gdlr-direction-horizontal" style="padding-bottom: 0px; display: block;">
@@ -294,11 +294,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gdlr-core-pbf-element">
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px;">
-                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border" href="#" id="gdlr-core-button-id-1"><span class="gdlr-core-content">Learn More</span></a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -343,11 +339,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gdlr-core-pbf-element">
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px;">
-                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border" href="#" id="gdlr-core-button-id-2"><span class="gdlr-core-content">Learn More</span></a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -392,11 +384,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gdlr-core-pbf-element">
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px;">
-                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border" href="#" id="gdlr-core-button-id-3"><span class="gdlr-core-content">Learn More</span></a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -441,11 +429,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gdlr-core-pbf-element">
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px;">
-                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border" href="#" id="gdlr-core-button-id-4"><span class="gdlr-core-content">Learn More</span></a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -490,11 +474,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gdlr-core-pbf-element">
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px;">
-                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border" href="#" id="gdlr-core-button-id-5"><span class="gdlr-core-content">Learn More</span></a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -539,11 +519,7 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="gdlr-core-pbf-element">
-                                <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px;">
-                                    <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border" href="#" id="gdlr-core-button-id-6"><span class="gdlr-core-content">Learn More</span></a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
@@ -597,7 +573,7 @@
                                 <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align" style="padding-bottom: 0px;">
                                     <a
                                         class="gdlr-core-button gdlr-core-button-solid gdlr-core-center-align gdlr-core-button-no-border"
-                                        href="#"
+                                        href="{{ route('tripcruds.index') }}"
                                         style="
                                             font-size: 16px;
                                             font-style: normal;

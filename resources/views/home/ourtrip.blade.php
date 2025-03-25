@@ -2,7 +2,7 @@
 @section('content')
 @if (Route::has('login'))
                                     @auth
-    <div class="zurf-page-title-wrap zurf-style-custom zurf-center-align">
+    <div class="zurf-page-title-wrap zurf-style-custom zurf-center-align" style="background-image: url(images/ourtte.jpg)">
         <div class="zurf-header-transparent-substitute"></div>
         <div class="zurf-page-title-overlay"></div>
         <div class="zurf-page-title-container zurf-container">
@@ -58,7 +58,7 @@
 
                                                 <div class="form-group">
                                                     <label for="availability" class="label-field">Availability</label>
-                                                    <input type="text" class="form-control input-field" placeholder="from __ to __"
+                                                    <input type="text" class="form-control input-field" placeholder="Availability :  -  "
                                                         name="availability" id="availability" required>
                                                 </div>
                                             </div>
@@ -77,11 +77,7 @@
                                             </div>
 
                                             <div class="form-row">
-                                                <div class="form-group">
-                                                    <label for="reviews_count" class="label-field">Reviews Count</label>
-                                                    <input type="number" class="form-control input-field"
-                                                        name="reviews_count" id="reviews_count" value="0" required>
-                                                </div>
+                                            
 
                                                 <div class="form-group">
                                                     <label for="price" class="label-field">Price</label>
@@ -202,15 +198,7 @@
                                                                 {{ $ourtripcrud->description }}
                                                             </div>
 
-                                                            <div class="tourmaster-tour-rating">
-                                                                @for ($i = 0; $i < 5; $i++)
-                                                                    <i
-                                                                        class="fa fa-star{{ $i < $ourtripcrud->reviews_count ? '' : '-o' }}"></i>
-                                                                @endfor
-                                                                <span
-                                                                    class="tourmaster-tour-rating-text">({{ $ourtripcrud->reviews_count }}
-                                                                    Reviews)</span>
-                                                            </div>
+                                                            
 
                                                             <div class="tourmaster-tour-booking"
                                                                 style="text-align: center;">
@@ -253,7 +241,7 @@
                                                     <textarea name="message" placeholder="Additional Requests" style="width: 100%; padding: 10px; margin-bottom: 10px;"></textarea>
                                                     <p>The price is for each person</p>
                                                     <input type="number" name="price"
-                                                        value="{{ $ourtripcrud->price }}" required readonly
+                                                        value="{{ $ourtripcrud->price }}" readonly
                                                         style="width: 100%; padding: 10px; margin-bottom: 10px;"
                                                         placeholder="price">
                                                   

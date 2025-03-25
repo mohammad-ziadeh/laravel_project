@@ -31,8 +31,6 @@
     <textarea name="description" placeholder="Description" rows="4"
         style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">{{ old('description') }}</textarea>
 
-    <input type="number" name="reviews_count" placeholder="Reviews Count" value="{{ old('reviews_count') }}"
-        style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
     <input type="number" name="price" placeholder="Price" value="{{ old('price') }}"
         style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">

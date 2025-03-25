@@ -36,7 +36,7 @@ class ContactsController extends Controller
             'subject' => $request->subject,
             'message' => $request->message,
         ]);
-        return view('home.contactus');
+        return redirect()->route('showContact.index');
         
     }
 
@@ -69,7 +69,11 @@ class ContactsController extends Controller
      */
     public function destroy( $id)
     {
-        Contact::destroy($id);
-        return redirect()->route('contacts.index');
+      
+            $contact = Contact::findOrFail($id);
+            
+            $contact->delete();
+            return redirect('contacts');
+        
     }
 }

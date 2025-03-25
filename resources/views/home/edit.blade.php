@@ -53,10 +53,7 @@
                         <input type="text" class="form-control" name="location" id="location" value="{{$ourtripcruds->location}}" required>
                     </div>
 
-                    <div class="col-md-6 mb-3">
-                        <label for="reviews_count" class="form-label">Reviews Count</label>
-                        <input type="number" class="form-control" name="reviews_count" id="reviews_count" value="{{$ourtripcruds->reviews_count}}" required>
-                    </div>
+                  
                 </div>
 
                 <div class="mb-3">

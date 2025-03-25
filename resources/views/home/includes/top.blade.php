@@ -4,9 +4,9 @@
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
-    <title>Zurf</title>
-
-    <link rel="preload" data-rocket-preload="" as="image" href="{{ asset('images/scuba-hero-bg.jpg') }}" fetchpriority="high"/>
+    <title>Orca</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.png" />
+        <link rel="preload" data-rocket-preload="" as="image" href="{{ asset('images/scuba-hero-bg.jpg') }}" fetchpriority="high"/>
     <link rel="preconnect" href="https://fonts.googleapis.com"/>
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
     <link rel="stylesheet" id="gdlr-core-google-font-css" href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Merriweather:wght@300;400;700;900&family=Open+Sans:wght@300;400;500;600;700;800&display=swap"/>

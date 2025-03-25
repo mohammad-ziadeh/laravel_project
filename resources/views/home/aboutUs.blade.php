@@ -222,7 +222,7 @@
                                         <div
                                             class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
                                             <a class="gdlr-core-button gdlr-core-button-solid gdlr-core-left-align gdlr-core-button-no-border"
-                                                href="#"
+                                                href="{{ route('tripcruds.index') }}"
                                                 style="
                                                 font-size: 16px;
                                                 font-style: normal;
@@ -259,125 +259,6 @@
                         background-position: center;
                     "
                         data-parallax-speed="0"></div>
-                </div>
-                <div class="gdlr-core-pbf-wrapper-content gdlr-core-js">
-                    <div class="gdlr-core-pbf-wrapper-container clearfix gdlr-core-container">
-                        <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first"
-                            id="gdlr-core-column-4">
-                            <div class="gdlr-core-pbf-column-content-margin gdlr-core-js"
-                                style="padding: 0px 0px 20px 0px;">
-                                <div class="gdlr-core-pbf-background-wrap"></div>
-                                <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js" style="max-width: 800px;">
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-title-item gdlr-core-item-pdb clearfix gdlr-core-center-align gdlr-core-title-item-caption-top gdlr-core-item-pdlr"
-                                            style="padding-bottom: 10px;">
-                                            <div class="gdlr-core-title-item-title-wrap">
-                                                <h3 class="gdlr-core-title-item-title gdlr-core-skin-title class-test"
-                                                    style="font-size: 32px; font-weight: 400; text-transform: none; color: #222222;">
-                                                    The best surfing location in the world<span
-                                                        class="gdlr-core-title-item-title-divider gdlr-core-skin-divider"></span>
-                                                </h3>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div
-                                            class="gdlr-core-image-item gdlr-core-item-pdb gdlr-core-center-align gdlr-core-item-pdlr">
-                                            <div class="gdlr-core-image-item-wrap gdlr-core-media-image gdlr-core-image-item-style-rectangle"
-                                                style="border-width: 0px; max-width: 41px;">
-                                                <a class="gdlr-core-lightgallery gdlr-core-js" href="images/wave.jpg">
-                                                    <img src="images/wave.jpg" alt="" width="120"
-                                                        height="36" title="wave" />
-                                                    <span class="gdlr-core-image-overlay"><i
-                                                            class="gdlr-core-image-overlay-icon gdlr-core-size-22 fa fa-search"></i></span>
-                                                </a>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-text-box-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align gdlr-core-no-p-space"
-                                            style="padding-bottom: 40px;">
-                                            <div class="gdlr-core-text-box-item-content"
-                                                style="font-size: 18px; font-weight: 400; letter-spacing: 0px; text-transform: none; color: #556575;">
-                                                <p>
-                                                    We offer adventurers many exciting surfing tour destinations. Taking a
-                                                    group surfing tour is the best way to do what you love, meet new people
-                                                    and experience a new culture.
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first"
-                            data-skin="Search Bar - About" id="gdlr-core-column-5">
-                            <div class="gdlr-core-pbf-column-content-margin gdlr-core-js">
-                                <div class="gdlr-core-pbf-background-wrap"></div>
-                                <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js" style="max-width: 840px;">
-                                    <div class="gdlr-core-pbf-element">
-                                        <div
-                                            class="tourmaster-tour-search-item clearfix tourmaster-style-column tourmaster-column-count-4 tourmaster-item-pdlr tourmaster-input-style-default">
-                                            <div class="tourmaster-tour-search-wrap clearfix">
-                                                <form
-                                                    class="tourmaster-form-field tourmaster-with-border tourmaster-medium"
-                                                    action="search-tours.html" method="GET">
-                                                    <input name="tour-search" type="hidden" value="" />
-                                                    <div
-                                                        class="tourmaster-tour-search-field tourmaster-tour-search-field-duration">
-                                                        <label class="gdlr-core-skin-title">Duration</label>
-                                                        <div class="tourmaster-combobox-wrap">
-                                                            <select name="duration">
-                                                                <option value="">Any</option>
-                                                                <option value="1">1 Day Tour</option>
-                                                                <option value="2">2-4 Days Tour</option>
-                                                                <option value="5">5-7 Days Tour</option>
-                                                                <option value="7">7+ Days Tour</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="tourmaster-tour-search-field tourmaster-tour-search-field-date">
-                                                        <label class="gdlr-core-skin-title">Date</label>
-                                                        <div class="tourmaster-datepicker-wrap">
-                                                            <input class="tourmaster-datepicker" type="text"
-                                                                value="" data-date-format="d M yy" /><input
-                                                                class="tourmaster-datepicker-alt" name="date"
-                                                                type="hidden" value="" />
-                                                            <span class="tourmaster-clear-date">Clear<span></span></span>
-                                                        </div>
-                                                    </div>
-                                                    <div
-                                                        class="tourmaster-tour-search-field tourmaster-tour-search-field-month">
-                                                        <label class="gdlr-core-skin-title">Month</label>
-                                                        <div class="tourmaster-combobox-wrap">
-                                                            <select name="month">
-                                                                <option value="">Any</option>
-                                                                <option value="2025-01">January 2025</option>
-                                                                <option value="2025-02">February 2025</option>
-                                                                <option value="2025-03">March 2025</option>
-                                                                <option value="2025-04">April 2025</option>
-                                                                <option value="2025-05">May 2025</option>
-                                                                <option value="2025-06">June 2025</option>
-                                                                <option value="2025-07">July 2025</option>
-                                                                <option value="2025-08">August 2025</option>
-                                                                <option value="2025-09">September 2025</option>
-                                                                <option value="2025-10">October 2025</option>
-                                                                <option value="2025-11">November 2025</option>
-                                                                <option value="2025-12">December 2025</option>
-                                                            </select>
-                                                        </div>
-                                                    </div>
-                                                    <input class="tourmaster-tour-search-submit" type="submit"
-                                                        value="Search" />
-                                                </form>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
                 </div>
             </div>
             <div class="gdlr-core-pbf-wrapper" style="padding: 40px 0px 20px 0px;">
@@ -442,14 +323,14 @@
                                 <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
                                     <div class="gdlr-core-pbf-element">
                                         <div class="tourmaster-tour-item clearfix tourmaster-tour-item-style-grid tourmaster-item-pdlr tourmaster-tour-item-column-3" style="padding-bottom: 50px;">
-                                            <div class="gdlr-core-flexslider flexslider gdlr-core-js-2" data-type="carousel" data-column="3" data-move="1" data-nav="navigation-outer" data-nav-parent="self" data-vcenter-nav="1">
+                                            <div class="gdlr-core-flexslider flexslider gdlr-core-js-2" data-type="carousel" data-column="3" data-move="1"  data-nav-parent="self">
                                                 <div class="gdlr-core-flexslider-custom-nav gdlr-core-style-navigation-outer gdlr-core-center-align">
                                                     <i class="fa fa-angle-left flex-prev" style=" color: #848484; background-color: #f3f3f3; padding: 11px 18px 11px 18px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; font-size: 21px; left: -80px; "></i>
                                                     <i class="fa fa-angle-right flex-next" style=" color: #848484; background-color: #f3f3f3; padding: 11px 18px 11px 18px; border-radius: 3px; -moz-border-radius: 3px; -webkit-border-radius: 3px; font-size: 21px; right: -80px; "></i>
                                                 </div>
                                                 <ul class="slides">
                                                     @foreach ($ourtripcruds as $ourtripcrud)
-                                                    <li>
+                                                    <li style="margin-left:30px">
                                                         <div
                                                             class="tourmaster-tour-grid tourmaster-tour-frame tourmaster-tour-grid-style-3 tourmaster-price-right-title">
                                                             <div
@@ -529,15 +410,7 @@
                                                                             {{ $ourtripcrud->description }}
                                                                         </div>
 
-                                                                        <div class="tourmaster-tour-rating">
-                                                                            @for ($i = 0; $i < 5; $i++)
-                                                                                <i
-                                                                                    class="fa fa-star{{ $i < $ourtripcrud->reviews_count ? '' : '-o' }}"></i>
-                                                                            @endfor
-                                                                            <span
-                                                                                class="tourmaster-tour-rating-text">({{ $ourtripcrud->reviews_count }}
-                                                                                Reviews)</span>
-                                                                        </div>
+                                                                       
 
                                                                         <div class="tourmaster-tour-booking"
                                                                             style="text-align: center;">
@@ -560,81 +433,9 @@
                                     </div>
                                     <div class="gdlr-core-pbf-element">
                                         <div class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-center-align">
-                                            <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border" href="search-tours.html" style="font-size: 16px; font-style: normal; font-weight: 500; color: #004375; text-transform: none;">
+                                            <a class="gdlr-core-button gdlr-core-button-transparent gdlr-core-center-align gdlr-core-button-no-border" href="{{ route('tripcruds.index') }}" style="font-size: 16px; font-style: normal; font-weight: 500; color: #004375; text-transform: none;">
                                             <span class="gdlr-core-content">View All Popular Tours<i class="gdlr-core-pos-right fa fa-long-arrow-right" style="font-size: 16px; color: #004375;"></i></span>
                                             </a>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                      
-                        <div class="gdlr-core-pbf-column gdlr-core-column-60 gdlr-core-column-first"
-                            id="gdlr-core-column-7">
-                            <div class="gdlr-core-pbf-column-content-margin gdlr-core-js"
-                                style="padding: 95px 0px 0px 0px;">
-                                <div class="gdlr-core-pbf-background-wrap"></div>
-                                <div class="gdlr-core-pbf-column-content clearfix gdlr-core-js">
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align"
-                                            style="margin-bottom: 0px;">
-                                            <div class="gdlr-core-divider-line gdlr-core-skin-divider"></div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div class="gdlr-core-gallery-item gdlr-core-item-pdb clearfix gdlr-core-gallery-item-style-grid-no-space gdlr-core-item-pdlr"
-                                            style="padding-bottom: 0px;">
-                                            <div class="gdlr-core-gallery-item-holder gdlr-core-js-2 clearfix"
-                                                data-layout="fitrows">
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-gallery-column gdlr-core-column-10 gdlr-core-column-first">
-                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image">
-                                                        <img src="images/gly01.jpg" alt="" width="386"
-                                                            height="236" title="gly01" />
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-gallery-column gdlr-core-column-10">
-                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image">
-                                                        <img src="images/gly02.jpg" alt="" width="386"
-                                                            height="236" title="gly02" />
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-gallery-column gdlr-core-column-10">
-                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image">
-                                                        <img src="images/gly03.jpg" alt="" width="386"
-                                                            height="236" title="gly03" />
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-gallery-column gdlr-core-column-10">
-                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image">
-                                                        <img src="images/gly04.jpg" alt="" width="386"
-                                                            height="236" title="gly04" />
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-gallery-column gdlr-core-column-10">
-                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image">
-                                                        <img src="images/gly05.jpg" alt="" width="386"
-                                                            height="236" title="gly05" />
-                                                    </div>
-                                                </div>
-                                                <div
-                                                    class="gdlr-core-item-list gdlr-core-gallery-column gdlr-core-column-10">
-                                                    <div class="gdlr-core-gallery-list gdlr-core-media-image">
-                                                        <img src="images/gly06.jpg" alt="" width="386"
-                                                            height="236" title="gly06" />
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="gdlr-core-pbf-element">
-                                        <div
-                                            class="gdlr-core-divider-item gdlr-core-divider-item-normal gdlr-core-item-pdlr gdlr-core-center-align">
-                                            <div class="gdlr-core-divider-line gdlr-core-skin-divider"></div>
                                         </div>
                                     </div>
                                 </div>
@@ -715,7 +516,7 @@
                                                                 href="images/surf-gallery-1.jpg"
                                                                 data-lightbox-group="gdlr-core-img-group-2">
                                                                 <img src="images/surf-gallery-1.jpg" alt=""
-                                                                    width="600" height="600"
+                                                                   style="height: 600px; width:600px;"
                                                                     title="surf-gallery-1" />
                                                             </a>
                                                         </div>
@@ -727,7 +528,7 @@
                                                                 href="images/surf-gallery-2.jpg"
                                                                 data-lightbox-group="gdlr-core-img-group-2">
                                                                 <img src="images/surf-gallery-2.jpg" alt=""
-                                                                    width="1070" height="600"
+                                                                    style="height: 600px; width:600px;"
                                                                     title="surf-gallery-2" />
                                                             </a>
                                                         </div>
@@ -739,7 +540,7 @@
                                                                 href="images/surf-gallery-3.jpg"
                                                                 data-lightbox-group="gdlr-core-img-group-2">
                                                                 <img src="images/surf-gallery-3.jpg" alt=""
-                                                                    width="600" height="600"
+                                                                   style="height: 600px; width:600px;"
                                                                     title="surf-gallery-3" />
                                                             </a>
                                                         </div>
@@ -751,7 +552,7 @@
                                                                 href="images/surf-gallery-4.jpg"
                                                                 data-lightbox-group="gdlr-core-img-group-2">
                                                                 <img src="images/surf-gallery-4.jpg" alt=""
-                                                                    width="1070" height="600"
+                                                                    style="height: 600px; width:600px;"
                                                                     title="surf-gallery-4" />
                                                             </a>
                                                         </div>
@@ -763,7 +564,7 @@
                                                                 href="images/surf-gallery-5.jpg"
                                                                 data-lightbox-group="gdlr-core-img-group-2">
                                                                 <img src="images/surf-gallery-5.jpg" alt=""
-                                                                    width="600" height="600"
+                                                                   style="height: 600px; width:600px;"
                                                                     title="surf-gallery-5" />
                                                             </a>
                                                         </div>
@@ -775,7 +576,7 @@
                                                                 href="images/surf-gallery-6.jpg"
                                                                 data-lightbox-group="gdlr-core-img-group-2">
                                                                 <img src="images/surf-gallery-6.jpg" alt=""
-                                                                    width="1070" height="600"
+                                                                    style="height: 600px; width:600px;"
                                                                     title="surf-gallery-6" />
                                                             </a>
                                                         </div>

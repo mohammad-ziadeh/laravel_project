@@ -32,7 +32,9 @@ class StatisticsController extends Controller
         // Reservation Statistics
         $totalReservation = Booking::count();
         $todayBooking = Booking::whereDate('created_at', $todayDate)->count();
+        $todayContacts = Contact::whereDate('created_at', $todayDate)->count();
         $thisMonthBooking = Booking::whereMonth('created_at', $thisMonth)->count();
+        $thisMonthEarnings = Booking::whereMonth('created_at', $thisMonth)->sum('price');
         $thisYearBooking = Booking::whereYear('created_at', $thisYear)->count();
 
         return view('admin.layout.mainBody', [
@@ -46,7 +48,9 @@ class StatisticsController extends Controller
             'todayReservation' => $todayBooking,   
             'thisMonthReservation' => $thisMonthBooking,  
             'thisYearReservation' => $thisYearBooking  ,
-            'totalEarning' => $totalEarning
+            'totalEarning' => $totalEarning,
+            'thisMonthEarnings'=> $thisMonthEarnings,
+            'todayContacts'=> $todayContacts
         ]);
     }
 }

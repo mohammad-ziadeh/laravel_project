@@ -37,9 +37,7 @@ class PackageController extends Controller
             'availability' => 'required|string',
             'location' => 'required|string',
             'description' => 'required|string',
-            'reviews_count' => 'required|integer',
             'price' => 'required|numeric',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         if ($request->hasFile('image')) {
@@ -54,7 +52,6 @@ class PackageController extends Controller
             'availability' => $validatedData['availability'],
             'location' => $validatedData['location'],
             'description' => $validatedData['description'],
-            'reviews_count' => $validatedData['reviews_count'],
             'price' => $validatedData['price'],
         ]);
 
@@ -82,9 +79,7 @@ class PackageController extends Controller
             'availability' => 'required|string',
             'location' => 'required|string',
             'description' => 'required|string',
-            'reviews_count' => 'required|integer',
             'price' => 'required|numeric',
-            'image' => 'nullable|image|mimes:jpeg,png,jpg,gif,svg|max:2048',
         ]);
 
         $ourtripcrud = Ourtripcrud::findOrFail($id);
@@ -104,7 +99,6 @@ class PackageController extends Controller
             'availability' => $validatedData['availability'],
             'location' => $validatedData['location'],
             'description' => $validatedData['description'],
-            'reviews_count' => $validatedData['reviews_count'],
             'price' => $validatedData['price'],
         ]);
 
@@ -116,15 +110,13 @@ class PackageController extends Controller
      */
     public function destroy($id)
     {
-        $ourtripcrud = Ourtripcrud::findOrFail($id);
-
-        if ($ourtripcrud->image) {
-            Storage::delete('public/' . $ourtripcrud->image);
+        {
+            $ourtripcrud = Ourtripcrud::findOrFail($id);
+            if ($ourtripcrud->image) {
+                Storage::delete('public/' . $ourtripcrud->image);
+            }
+            $ourtripcrud->delete();
+            return redirect('packages');
         }
-
-        $ourtripcrud->delete();
-
-        
-        return redirect()->route('packages.index')->with('success', 'Package updated successfully!');
     }
 }

@@ -2,56 +2,41 @@
 
 @section('content')
     <div class="main-panel">
+        <div class="mb-3" style="margin-top: 40px">
+            <a href="{{ route('galleries.create') }}" class="btn btn-success">Add New Image</a>
+        </div>
         
         <div class="InputContainer">
             <input placeholder="Search" id="input" class="input" name="text" type="text" />
             <button id="searchButton" class="searchButton">Search</button>
         </div>
-        <div class="mb-3" style="margin-top: 40px">
-            <a href="{{ route('packages.create') }}" class="btn btn-success">Create New Package</a>
-        </div>
+
         <div class="grid-margin stretch-card">
             <div class="card">
                 <div class="card-body">
-                    <h4 class="card-title">Ourtripcruds Table</h4>
-
+                    <h4 class="card-title">Gallery Table</h4>
                     <div class="table-responsive">
                         <table class="table">
                             <thead>
                                 <tr>
                                     <th>ID</th>
-                                    <th>Title</th>
                                     <th>Image</th>
-                                    <th>Duration</th>
-                                    <th>Availability</th>
-                                    <th>Location</th>
-                                    <th>Description</th>
-                                    <th>Price</th>
+                                    <th>Instructions</th>
                                     <th>Action</th>
                                 </tr>
                             </thead>
                             <tbody>
-                                @foreach ($ourtripcruds as $ourtripcrud)
+                                @foreach ($galleries as $gallery)
                                     <tr>
-                                        <td>{{ $ourtripcrud->id }}</td>
-                                        <td>{{ $ourtripcrud->title }}</td>
+                                        <td>{{ $gallery->id }}</td>
+                                        <td><img src="{{ asset('storage/' . $gallery->image) }}"  alt="Gallery Image"></td>
+                                        <td style="font-style: italic; color: #888;">The image should be square, preferably 600px by 600px.</td>
                                         <td>
-                                            <img src="{{ asset('storage/' . $ourtripcrud->image) }}" alt="Image"
-                                                style="width: 100px; height: 100px;">
-                                        </td>
-                                        <td>{{ $ourtripcrud->duration }}</td>
-                                        <td>{{ $ourtripcrud->availability }}</td>
-                                        <td>{{ $ourtripcrud->location }}</td>
-                                        <td>{{ $ourtripcrud->description }}</td>
-                                        <td>{{ $ourtripcrud->price }}</td>
-                                        <td>
-                                            <a class="btn btn-primary" href="{{ route('packages.edit', $ourtripcrud->id) }}" class="btn">Edit</a>
-                                            <form id="delete-form-{{ $ourtripcrud->id }}" action="{{ route('packages.destroy', $ourtripcrud->id) }}" method="POST" style="display: inline;">
+                                            <a href="{{ route('galleries.edit', $gallery->id) }}" class="btn btn-primary">Edit</a>
+                                            <form action="{{ route('galleries.destroy', $gallery->id) }}" method="POST" style="display:inline;">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{ $ourtripcrud->id }})">
-                                                    Delete
-                                                </button>
+                                                <button type="submit" class="btn btn-danger" onclick="return confirm('Are you sure?')">Delete</button>
                                             </form>
                                         </td>
                                     </tr>
@@ -59,9 +44,8 @@
                             </tbody>
                         </table>
                     </div>
-
                     <div class="d-flex justify-content-center align-items-center">
-                        {{ $ourtripcruds->links('pagination::bootstrap-4') }}
+                        {{ $galleries->links('pagination::bootstrap-4') }}
                     </div>
                 </div>
             </div>
@@ -69,14 +53,12 @@
     </div>
 
     <style>
-        /* Your custom styles for the page */
         .InputContainer {
             display: flex;
             align-items: center;
             justify-content: center;
             margin: 20px;
         }
-
         .input {
             width: 250px;
             padding: 10px;
@@ -87,7 +69,6 @@
             outline: none;
             transition: all 0.3s ease;
         }
-
         .searchButton {
             padding: 10px 20px;
             background-color: #104581;
@@ -98,7 +79,6 @@
             font-size: 16px;
             transition: all 0.3s ease;
         }
-
         .searchButton:focus {
             outline: none;
             box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
@@ -106,17 +86,17 @@
     </style>
 
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
+        document.addEventListener('DOMContentLoaded', function () {
             const input = document.getElementById('input');
             const searchButton = document.getElementById('searchButton');
             const tableRows = document.querySelectorAll('.table tbody tr');
-
+    
             function filterTable() {
                 const searchQuery = input.value.toLowerCase();
-
-                tableRows.forEach(function(row) {
+    
+                tableRows.forEach(function (row) {
                     const rowText = row.textContent.toLowerCase();
-
+                    
                     if (rowText.includes(searchQuery)) {
                         row.style.display = '';
                     } else {
@@ -124,9 +104,8 @@
                     }
                 });
             }
-
+    
             input.addEventListener('input', filterTable);
-
             searchButton.addEventListener('click', filterTable);
         });
     </script>

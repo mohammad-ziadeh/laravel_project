@@ -1,16 +1,18 @@
 <?php
 
-use App\Http\Controllers\BookHistoryController;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\UserController;
 use App\Http\Controllers\BookingController;
+use App\Http\Controllers\GalleryController;
 use App\Http\Controllers\PackageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ContactsController;
 use App\Http\Controllers\OurtripsController;
 use App\Http\Controllers\StatisticsController;
+use App\Http\Controllers\BookHistoryController;
 use App\Http\Controllers\HomePackageController;
 use App\Http\Controllers\OurtripcrudsController;
+use App\Http\Controllers\ShowContactController;
 
 // public
 Route::view('/', 'welcome');
@@ -33,13 +35,12 @@ Route::middleware(['auth'])->group(function () {
 // });
 
 // Admin 
-Route::middleware(['auth','role:admin', 'verified'])->group(function () {
+Route::middleware(['auth', 'role:admin', 'verified'])->group(function () {
     Route::view('/dashboard', 'admin.layout.mainBody')->name('dashboard');
     Route::view('/charts', 'admin.layout.charts')->name('charts');
     Route::view('/contacts', 'admin.layout.indexcontact')->name('contacts');
     Route::view('/users', 'admin.layout.users.index')->name('users');
-    Route::view('/packages', 'admin.layout.packages')->name('package');
-
+ //   Route::view('/galleries', 'admin.layout.galleries.index')->name('gallery');
 });
 
 // Super Admin 
@@ -49,6 +50,7 @@ Route::middleware(['auth', 'role:super_admin', 'verified'])->group(function () {
     Route::view('/contacts', 'admin.layout.indexcontact')->name('contacts');
     Route::view('/users', 'admin.layout.users.index')->name('users');
     Route::view('/packages', 'admin.layout.packages')->name('package');
+ //   Route::view('/galleries', 'admin.layout.galleries.index')->name('gallery');
 });
 
 
@@ -59,8 +61,10 @@ Route::resource('contacts', ContactsController::class);
 Route::resource('users', UserController::class);
 Route::resource('ourtrips', OurtripsController::class);
 Route::resource('tripcruds', OurtripcrudsController::class);
-Route::resource('packages', PackageController::class, );
-Route::resource('about', HomePackageController::class, );
+Route::resource('packages', PackageController::class,);
+Route::resource('about', HomePackageController::class,);
 Route::resource('booknows', BookingController::class);
 Route::resource('bookingHistory', BookHistoryController::class);
 Route::resource('statistics', StatisticsController::class);
+Route::resource('showContact', ShowContactController::class);
+//Route::resource('galleries', GalleryController::class);
