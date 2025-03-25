@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Confirm Password</title>
+    <link rel="icon" type="image/svg+xml" href="images/logo.png" />
+
     <style>
         body {
             background-image: url('images/diver-sea-surrounded-by-wild-nature.jpg');

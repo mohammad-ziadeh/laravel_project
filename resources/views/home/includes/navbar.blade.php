@@ -62,7 +62,7 @@
             <div class="zurf-header-container-inner clearfix">
                 <div class="zurf-logo zurf-item-pdlr" >
                     <div class="zurf-logo-inner" >
-                        <a href="homepage"><img src="images/logo.png" alt="" style="width: 100px ; height: 100px;"
+                        <a href="homepage"><img src="images/logo.png" alt="" style="width: 70px ; height: 70px;"
                                 title="logo" /></a>
                     </div>
                 </div>
