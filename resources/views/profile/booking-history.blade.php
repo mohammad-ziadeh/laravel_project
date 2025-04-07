@@ -29,7 +29,7 @@
                                         @if ($booking->numberofpeople > 1)
                                         <span>Price per Person: {{ $booking->price / $booking->numberofpeople }} JOD</span>
                                         @else
-                                        <span>Price: {{ $booking->price }} JOD</span>
+                                        <span>Price per Person: {{ $booking->price }} JOD</span>
                                         @endif    
                                         <span>Total Price: {{ $booking->price }} JOD</span>
                                         <span class="badge bg-primary rounded-pill">{{ $booking->state }}</span>
