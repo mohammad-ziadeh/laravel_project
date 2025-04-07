@@ -618,7 +618,7 @@
                                                 <div
                                                     class="gdlr-core-button-item gdlr-core-item-pdlr gdlr-core-item-pdb gdlr-core-left-align">
                                                     <a class="gdlr-core-button gdlr-core-button-gradient gdlr-core-left-align gdlr-core-button-no-border"
-                                                        href="/contact"
+                                                        href="{{ route('showContact.index') }}"
                                                         style=" font-size: 16px; font-style: normal; font-weight: 500; letter-spacing: 0px; color: #ffffff; padding: 14px 32px 14px 32px; text-transform: none; border-radius: 5px; -moz-border-radius: 5px; -webkit-border-radius: 5px; background: #004375; ">
                                                         <span class="gdlr-core-content">Contact Us</span>
                                                     </a>

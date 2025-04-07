@@ -19,7 +19,7 @@
     <input type="text" name="title" placeholder="Title" value="{{ old('title') }}"
         style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
-    <input type="text" name="duration" placeholder="Duration" value="{{ old('duration') }}"
+    <input type="number" name="duration" placeholder="Duration" value="{{ old('duration') }}"
         style="width: 100%; padding: 10px; margin-bottom: 15px; border: 1px solid #ccc; border-radius: 4px;">
 
     <input type="text" name="availability" placeholder="Availability" value="{{ old('availability') }}"

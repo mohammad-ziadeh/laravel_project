@@ -2,8 +2,12 @@
 
 @section('content')
     <div class="main-panel">
-        
-        <div class=" grid-margin stretch-card" style="margin-top: 80px">
+        <div class="InputContainer"  style="margin-top: 70px">
+            <input placeholder="Search" id="input" class="input" name="text" type="text" />
+            <button id="searchButton" class="searchButton">Search</button>
+        </div>   
+        <div class=" grid-margin stretch-card" style="margin-top: 30px">
+           
            
             <div class="card">
                 <div class="card-body">
@@ -34,7 +38,7 @@
                                                 style="display:inline;">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{ $contact->id }})">Delete</button>
+                                                <button type="submit" class="btn btn-danger" onclick="confirmDelete({{ $contact->id }})">Delete</button>
                                             </form>
                                         </td>
                                     </tr>
@@ -52,6 +56,69 @@
     </div>
 
 
+    <style>
+        .InputContainer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 20px;
+        }
 
+        .input {
+            width: 250px;
+            padding: 10px;
+            margin-right: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 16px;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+
+
+
+        .searchButton {
+            padding: 10px 20px;
+            background-color: #104581;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            font-size: 16px;
+            transition: all 0.3s ease;
+        }
+
+
+
+        .searchButton:focus {
+            outline: none;
+            box-shadow: 0 0 5px rgba(76, 175, 80, 0.4);
+        }
+    </style>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            const input = document.getElementById('input');
+            const searchButton = document.getElementById('searchButton');
+            const tableRows = document.querySelectorAll('.table tbody tr');
+    
+            function filterTable() {
+                const searchQuery = input.value.toLowerCase();
+    
+                tableRows.forEach(function (row) {
+                    const rowText = row.textContent.toLowerCase();
+                    
+                    if (rowText.includes(searchQuery)) {
+                        row.style.display = '';
+                    } else {
+                        row.style.display = 'none';
+                    }
+                });
+            }
+    
+            input.addEventListener('input', filterTable);
+    
+            searchButton.addEventListener('click', filterTable);
+        });
+    </script>
     
 @endsection

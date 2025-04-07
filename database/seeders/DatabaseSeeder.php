@@ -3,6 +3,8 @@
 namespace Database\Seeders;
 
 // use Illuminate\Database\Console\Seeds\WithoutModelEvents;
+
+use App\Models\Contact;
 use App\Models\User;
 use Illuminate\Database\Seeder;
 
@@ -14,7 +16,8 @@ class DatabaseSeeder extends Seeder
     public function run(): void
     {
 
-        User::factory()->count(20)->create();
+        User::factory()->count(34)->create();
+        Contact::factory()->count(20)->create();
         // \App\Models\User::factory(10)->create();
 
         // \App\Models\User::factory()->create([

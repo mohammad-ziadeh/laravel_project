@@ -20,7 +20,7 @@ class UserFactory extends Factory
     {
         return [
             'name' => $this->faker->name(),
-            'role' => $this->faker->randomElement(['user']),
+            'role' => $this->faker->randomElement(['user','admin']),
             'email' => $this->faker->unique()->safeEmail(),
             'password' => Hash::make('password'), 
             'email_verified_at' => now(),

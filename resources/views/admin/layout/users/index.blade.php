@@ -40,7 +40,7 @@
                                                 style="display:inline;">
                                                 @csrf
                                                 @method('DELETE')
-                                                <button type="button" class="btn btn-danger" onclick="confirmDelete({{ $user->id }})">Delete</button>
+                                                <button type="submit" class="btn btn-danger" onclick="confirmDelete({{ $user->id }})">Delete</button>
                                             </form>
                                         </td>
                                     </tr>

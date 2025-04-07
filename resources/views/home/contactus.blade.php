@@ -239,16 +239,17 @@
                                                     <div class="gdlr-core-column-60">
                                                         <p>
                                                             <span class="wpcf7-form-control-wrap" data-name="your-subject">
-                                                                <input
-                                                                    size="40"
-                                                                    maxlength="400"
-                                                                    class="wpcf7-form-control wpcf7-text wpcf7-validates-as-required"
+                                                                <select 
+                                                                    class="wpcf7-form-control wpcf7-select wpcf7-validates-as-required"
                                                                     aria-required="true"
                                                                     aria-invalid="false"
-                                                                    placeholder="Subject*"
-                                                                    type="text"
                                                                     name="subject"
-                                                                />
+                                                                >
+                                                                    <option value="" disabled selected>Subject*</option>
+                                                                    <option value="Review">Review</option>
+                                                                    <option value="Message">Message</option>
+
+                                                                </select>
                                                             </span>
                                                         </p>
                                                     </div>
@@ -404,53 +405,48 @@
                                                     data-nav="none">
                                                     <ul class="slides">
                                                         @foreach ($contacts as $contact)
-                                                        <li class="gdlr-core-item-mglr">
-                                                            <div class="gdlr-core-testimonial clearfix">
-                                                                <div class="gdlr-core-testimonial-frame clearfix gdlr-core-skin-e-background gdlr-core-outer-frame-element"
-                                                                    style=" box-shadow: 0 20px 35px rgba(38, 42, 76, 0.07); -moz-box-shadow: 0 20px 35px rgba(38, 42, 76, 0.07); -webkit-box-shadow: 0 20px 35px rgba(38, 42, 76, 0.07); border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; -webkit-border-radius: 10px 10px 10px 10px; background-color: #ffffff; ">
-                                                                    <div
-                                                                        class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon">
-                                                                        “
-                                                                    </div>
-                                                                    <div
-                                                                        class="gdlr-core-testimonial-author-image gdlr-core-media-image">
-                                                                        <img src="images/avatar.png"
-                                                                            alt="" width="768"
-                                                                            height="768"
-                                                                            title="portrait05" />
-                                                                    </div>
-                                                                    <div class="gdlr-core-testimonial-frame-border"
-                                                                        style=" border-width: 1px 1px 1px 1px; border-color: #e7e7e7; border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; -webkit-border-radius: 10px 10px 10px 10px; ">
-                                                                    </div>
-                                                                   
-                                                                    <div class="gdlr-core-testimonial-head">
-                                                                        <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title"
-                                                                            style="color: #222222; font-size: 20px; font-weight: 500; font-style: normal; text-transform: none;">
-                                                                            {{ $contact->name}}
+                                                        @if($contact->subject === 'Review')
+                                                            <li class="gdlr-core-item-mglr">
+                                                                <div class="gdlr-core-testimonial clearfix">
+                                                                    <div class="gdlr-core-testimonial-frame clearfix gdlr-core-skin-e-background gdlr-core-outer-frame-element"
+                                                                        style=" box-shadow: 0 20px 35px rgba(38, 42, 76, 0.07); -moz-box-shadow: 0 20px 35px rgba(38, 42, 76, 0.07); -webkit-box-shadow: 0 20px 35px rgba(38, 42, 76, 0.07); border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; -webkit-border-radius: 10px 10px 10px 10px; background-color: #ffffff;">
+                                                                        
+                                                                        <div class="gdlr-core-testimonial-quote gdlr-core-quote-font gdlr-core-skin-icon">“</div>
+                                                                        
+                                                                        <div class="gdlr-core-testimonial-author-image gdlr-core-media-image">
+                                                                            <img src="images/avatar.png" alt="" width="768" height="768" title="portrait05" />
                                                                         </div>
+                                                                        
+                                                                        <div class="gdlr-core-testimonial-frame-border"
+                                                                            style=" border-width: 1px 1px 1px 1px; border-color: #e7e7e7; border-radius: 10px 10px 10px 10px; -moz-border-radius: 10px 10px 10px 10px; -webkit-border-radius: 10px 10px 10px 10px;">
+                                                                        </div>
+                                                                        
+                                                                        <div class="gdlr-core-testimonial-head">
+                                                                            <div class="gdlr-core-testimonial-title gdlr-core-title-font gdlr-core-skin-title"
+                                                                                style="color: #222222; font-size: 20px; font-weight: 500; font-style: normal; text-transform: none;">
+                                                                                {{ $contact->name }}
+                                                                            </div>
+                                                                        </div>
+                                                                        
+                                                                        <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content"
+                                                                            style="font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: 0px; color: #556575;">
+                                                                            <p>
+                                                                                {{ $contact->message }}
+                                                                            </p>
+                                                                        </div>
+                                                                        
+                                                                        <span class="gdlr-core-rating">
+                                                                            <i class="fa fa-star" style="color: #f6a46a;"></i>
+                                                                            <i class="fa fa-star" style="color: #f6a46a;"></i>
+                                                                            <i class="fa fa-star" style="color: #f6a46a;"></i>
+                                                                            <i class="fa fa-star" style="color: #f6a46a;"></i>
+                                                                            <i class="fa fa-star" style="color: #f6a46a;"></i>
+                                                                        </span>
                                                                     </div>
-                                                                    <div class="gdlr-core-testimonial-content gdlr-core-info-font gdlr-core-skin-content"
-                                                                        style="font-size: 16px; font-style: normal; font-weight: 400; letter-spacing: 0px; color: #556575;">
-                                                                        <p>
-                                                                            {{ $contact->message}}
-                                                                        </p>
-                                                                    </div>
-                                                                    <span class="gdlr-core-rating">
-                                                                        <i class="fa fa-star"
-                                                                            style="color: #f6a46a;"></i><i
-                                                                            class="fa fa-star"
-                                                                            style="color: #f6a46a;"></i><i
-                                                                            class="fa fa-star"
-                                                                            style="color: #f6a46a;"></i>
-                                                                        <i class="fa fa-star"
-                                                                            style="color: #f6a46a;"></i><i
-                                                                            class="fa fa-star"
-                                                                            style="color: #f6a46a;"></i>
-                                                                    </span>
                                                                 </div>
-                                                            </div>
-                                                        </li>
-                                                        @endforeach
+                                                            </li>
+                                                        @endif
+                                                    @endforeach
                                                         
                                                         
                                                     </ul>
