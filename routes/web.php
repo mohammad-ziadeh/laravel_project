@@ -68,3 +68,8 @@ Route::resource('bookingHistory', BookHistoryController::class);
 Route::resource('statistics', StatisticsController::class);
 Route::resource('showContact', ShowContactController::class);
 //Route::resource('galleries', GalleryController::class);
+
+
+Route::fallback(function () {
+    return response()->view('errors.404', [], 404);
+});
